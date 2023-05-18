@@ -1,0 +1,71 @@
+div{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    color: white;
+    animation-name: colorChange;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation-direction: alternate-reverse; */
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    /* animation-fill-mode: both; */
+    /* animation-direction:reverse; */
+    /* animation-direction:alternate; */
+    /* animation-iteration-count: infinite; */
+}
+#ease{
+    animation-timing-function: ease; 
+    background-color: black;
+}
+#ease-in{
+    animation-timing-function: ease-in; 
+    background-color:aquamarine;
+}
+#ease-out{
+    animation-timing-function: ease-out; 
+    background-color: pink;
+}
+#ease-in-out{
+    animation-timing-function: ease-in-out; 
+    background-color: blueviolet;
+}
+#linear{
+    animation-timing-function: linear; 
+    background-color: coral;
+}
+@keyframes colorChange {
+    0%{
+        background-color: rgb(208, 255, 0);
+        top:0px;
+        left:0px;
+    }
+    25%{
+        background-color:blue;
+        top:0px;
+        left:200px;
+    }
+    50%{
+        background-color:rgb(225, 139, 246);
+        top:200px;
+        left:200px;  
+    }
+    75%{
+        background-color:rgb(52, 148, 8);
+        top:200px;
+        left:80px;   
+    }
+    85%{
+        background-color:coral;
+        top:200px;
+        left:0px;   
+    }
+    100%{
+        background-color:rgb(97, 215, 254);
+        top:0px;
+        left:0px;   
+    }
+    
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+</head>
+<body>
+    <!-- Table in html -->
+    <table border cellpadding="16px" cellspacing="5px" bordercolor="red">
+        <tr>
+            <th>Sr. No</th>
+            <th>Sub 1</th>
+            <th>Sub 2</th>
+            <th>Sub 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>English</td>
+            <td colspan="2">Science (colspan=2)</td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>English</td>
+            <td>Science</td>
+            <td rowspan="2">Computer (rowspan=2)</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>English</td>
+            <td>Science</td>
+            
+        </tr>
+    </table>
+    <!-- <a href="/pdf/west.pdf" download>Download file</a> -->
+    <!-- Forms -->
+    <!-- HTTP=> HyperText Transfer Protocol -->
+    <form style="border: 2px solid blue;">
+        <!-- action attribute contains a route -->
+        <!-- target="_blank" attribute redirects the page into a new tab after submission of the form -->
+        <!-- HTML allows only 'get' and 'post' methods  -->
+        <!-- "get" stores the data inside the server or history-->
+
+   <fieldset>
+    <legend><strong>User Details</strong></legend>
+
+<label for="name">Enter Your Name</label>
+<input type="text" name="name" id="name" placeholder="Enter Your Name Here" value="Eshita Das" autofocus>
+<!-- value attribute refers to default value of this input tag -->
+<!-- readonly attribute doesn't change on onkeyup or user can't edit this value -->
+<!-- autofocus will automatically highlight this field after the finishing of loading of the page -->
+<br>
+    <label for="dob">DOB:</label>
+    <input type="date" name="dob" id="dob">
+    <br>
+    Select Gender<br>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <!-- If 'id' would be gender and gender1 respectively , user could choose both genders at the same time so, make sure id of radio options are unique-->
+    <!-- We have to add the value attribute to get the data of the radio field on the particular route  -->
+    <br>
+
+    Select Favoutite movie:
+    <label for="avengers">Avengers</label>
+    <input type="checkbox" name="avengers" id="avengers">
+    <br>
+    <label for="titanic">Titanic</label>
+    <input type="checkbox" name="titanic" id="titanic">
+    <br>
+    Select Favoutite food:
+    <!-- Checkboxes let user choose multiple options for a certain choice -->
+    <label for="chole">Chole Bhature</label>
+    <input type="checkbox" name="chole" id="chole">
+    <br>
+    <label for="parathe">Parathe</label>
+    <input type="checkbox" name="parathe" id="parathe">
+    <br>
+    <input type="submit" value="Submit">
+</fieldset>
+<br>
+<fieldset>
+    <legend><strong>User Detail Confirmation</strong></legend>
+
+
+<label for="dob">DOB:</label>
+    <input type="date" name="dob" id="dob">
+    <br>
+    Select Gender<br>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female">
+    <!-- If 'id' would be gender and gender1 respectively , user could choose both genders at the same time so, make sure id of radio options are unique-->
+    <br>
+
+    Select Favoutite movie:
+    <label for="avengers">Avengers</label>
+    <input type="checkbox" name="avengers" id="avengers">
+    <br>
+    <input type="submit" value="Submit">
+</fieldset>
+</form>
+</body>
+</html>

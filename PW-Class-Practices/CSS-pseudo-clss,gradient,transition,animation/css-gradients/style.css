@@ -1,0 +1,10 @@
+.grad{
+    /* width: 750px; */
+    height: 800px;
+    /* background-image: linear-gradient(to right,red , yellow ); */
+    /* background-image: radial-gradient(red,yellow,rgb(10, 249, 10)); */
+    /* background-image: repeating-radial-gradient(circle,red 10%,yellow 20%,rgb(26, 10, 249) 15%); */
+    /* background-image: conic-gradient(red,yellow,rgb(249, 10, 86)); */
+    background-image: conic-gradient(red, orange, yellow, green, blue);
+    border: 1px solid red;
+}

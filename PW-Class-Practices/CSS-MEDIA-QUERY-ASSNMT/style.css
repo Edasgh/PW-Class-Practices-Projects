@@ -1,0 +1,14 @@
+/* @media(orientation:landscape){
+    body{
+        background-color: cyan;
+    }
+} */
+
+.container{
+    width: 500px;
+    border: 2px solid blue;
+}
+
+ h2{
+    float: none;
+}
