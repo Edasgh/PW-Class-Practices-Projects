@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album using Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,250px);
+            height: 1300px;
+            grid-gap: 20px;
+        }
+      .box {
+        /* height: 100px;
+        width: 100px; */
+        overflow: hidden;
+      }
+      .box1 {
+        background-color: red;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+      .box2 {
+        background-color: yellow;
+      }
+      .box3 {
+        background-color: gray;
+      }
+      .box4 {
+        background-color: darkblue;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+      .box5 {
+        background-color: magenta;
+      }
+      .box6 {
+        background-color: forestgreen;
+      }
+      .box7 {
+        background-color: pink;
+      }
+      .box8 {
+        background-color: brown;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+      .box9 {
+        background-color: black;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Grid Album -->
+    <div class="container">
+      <div class="box box1">
+        <img src="https://images.pexels.com/photos/17130082/pexels-photo-17130082/free-photo-of-mexico-mexico-city.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic1">
+      </div>
+      <div class="box box2">
+        <img src="https://images.pexels.com/photos/17005348/pexels-photo-17005348/free-photo-of-art-garden-leaf-flower.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic2">
+      </div>
+      <div class="box box3">
+        <img src="https://images.pexels.com/photos/15776580/pexels-photo-15776580/free-photo-of-food-beverages-and-eggs.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic3">
+      </div>
+      <div class="box box4">
+        <img src="https://images.pexels.com/photos/14035769/pexels-photo-14035769.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="pic4">
+      </div>
+      <div class="box box5">
+        <img src="https://images.pexels.com/photos/12993530/pexels-photo-12993530.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic5">
+      </div>
+      <div class="box box6">
+        <img src="https://images.pexels.com/photos/16965658/pexels-photo-16965658/free-photo-of-sea-beach-vacation-sand.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic6">
+      </div>
+      <div class="box box7">
+        <img src="https://images.pexels.com/photos/17079172/pexels-photo-17079172/free-photo-of-moss-on-rocks-on-shore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic7">
+      </div>
+      <div class="box box8">
+        <img src="https://images.pexels.com/photos/16611985/pexels-photo-16611985/free-photo-of-trees.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="pic8">
+      </div>
+      <div class="box box9"><img src="https://images.pexels.com/photos/12225910/pexels-photo-12225910.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="pic9"></div>
+    </div>
+  </body>
+</html>

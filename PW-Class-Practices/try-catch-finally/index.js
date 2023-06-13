@@ -1,6 +1,7 @@
 try{
 let x=undefined;
 console.log(x[0]);
+console.log("ending try")
 }catch(error){
 console.log("Error handling in catch")
 console.log(error)

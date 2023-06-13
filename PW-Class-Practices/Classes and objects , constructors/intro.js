@@ -1,4 +1,5 @@
 //What are the classes and objects
+// classes are a blueprint and objects are real life entities
 class Product{
     //syntax of variables in a class
     //properties=>variables=>data members
