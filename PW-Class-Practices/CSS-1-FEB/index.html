@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSite</title>
+    <!-- Adding stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- fontawesome link -->
+    <script
+      src="https://kit.fontawesome.com/a508d8e351.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navbar">
+        <!-- Logo -->
+        <span class="logo">
+          <h2>LOGO</h2>
+        </span>
+        <!-- List -->
+        <ul class="list" type="none">
+          <li><a href="#home" class="list-link">Home</a></li>
+          <li><a href="#about" class="list-link">About</a></li>
+          <li><a href="#contact" class="list-link">Contact</a></li>
+        </ul>
+        <!-- Search Form -->
+        <form id="search-field">
+          <input type="text" class="searchInput" placeholder="Search" />
+          <button class="searchBtn">Search</button>
+        </form>
+      </nav>
+    </header>
+    <!-- Hero Section starts here -->
+    <main class="hero-section">
+      <!-- Left part -->
+      <section class="left-hero-section">
+        <p class="h1">
+          Hello, I am a <span class="cyan-text darker-bg"> Web Developer </span><br>
+        </p>
+        <p>
+          I am an aspiring
+          <span class="cyan-text">Full Stack JavaScript Developer</span>, <br/> who
+          is currently working as
+          <span class="cyan-text">a Freelancer</span> for
+          <span class="cyan-text">National and International Clients</span>.
+        </p>
+      </section>
+      <!-- Right part -->
+      <section class="right-hero-section">
+        <img src="./assets/profile.png" alt="profile_picture" class="profile" />
+        <button class="contact_me">Chat With Me</button>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p class="footer-text">
+        Copyright &copy; 2023 LOGO. All Rights Reserved.
+      </p>
+      <div class="contact-icons">
+        <i class="fa-brands fa-github" title="Github_logo"></i>
+        <i class="fa-brands fa-linkedin-in" title="Linkedin_logo"></i>
+        <i class="fa-brands fa-instagram" title="Instagram_logo"></i>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("search-field").onsubmit = function (e) {
+        e.preventDefault();
+      };
+    </script>
+  </body>
+</html>
