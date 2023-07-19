@@ -1,0 +1,5 @@
+## 
+
+In distributed systems with NoSQL databases, the need for "JOIN + NETWORK CALL DATA TRANSFER" is typically reduced or eliminated. NoSQL databases handle large-scale distributed data differently than traditional RDBMS systems, using mechanisms such as denormalization, data replication, distributed indexes, and different query models to optimize data access and retrieval. This minimizes the reliance on complex joins and network data transfers, improving query performance in distributed environments.
+
+____________________________________________________________________________________________________________________
